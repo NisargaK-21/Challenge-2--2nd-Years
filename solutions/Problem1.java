@@ -1,17 +1,17 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution1 {
-    public static void main(String[] args) {
+public class Problem1 {
+    public static void main(String[] args) throws IOException{
         List<String> grid = new ArrayList<>();
-        BuffferReader br1=new BuffferReader(new FileReader("inputs/grid.txt"));
+        BufferedReader br1=new BufferedReader(new FileReader("inputs/grid.txt"));
         String line;
         while((line=br1.readLine())!=null){
             grid.add(line);
         }
         br1.close();
 
-        BuffferReader br2=new BuffferReader(new FileReader("inputs/directions.txt"));
+        BufferedReader br2=new BufferedReader(new FileReader("inputs/directions.txt"));
         String[] dirs=br2.readLine().split(" ");
         br2.close();
 
